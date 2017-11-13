@@ -20,6 +20,7 @@
 		4C0A57831D65E73000216C45 /* OpenCVRecognizer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C0A57821D65E73000216C45 /* OpenCVRecognizer.mm */; };
 		4C0A57851D66169000216C45 /* haarcascade_russian_plate_number.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4C0A57841D66169000216C45 /* haarcascade_russian_plate_number.xml */; };
 		4C0A57881D66231E00216C45 /* OpenCVImage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4C0A57871D66231E00216C45 /* OpenCVImage.mm */; };
+		DB13A8FD1FB9D1E600EDD057 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB13A8FC1FB9D1E500EDD057 /* opencv2.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		4C0A57861D66231E00216C45 /* OpenCVImage.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = OpenCVImage.hpp; sourceTree = "<group>"; };
 		4C0A57871D66231E00216C45 /* OpenCVImage.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVImage.mm; sourceTree = "<group>"; };
 		4C0A57891D6626D700216C45 /* opencv-headers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "opencv-headers.h"; sourceTree = "<group>"; };
+		DB13A8FC1FB9D1E500EDD057 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB13A8FD1FB9D1E600EDD057 /* opencv2.framework in Frameworks */,
 				4C0A57771D65CA4700216C45 /* opencv2.framework in Frameworks */,
 				4C0A57751D65CA2D00216C45 /* AssetsLibrary.framework in Frameworks */,
 			);
@@ -80,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				4C0A57761D65CA4700216C45 /* opencv2.framework */,
+				DB13A8FC1FB9D1E500EDD057 /* opencv2.framework */,
 				4C0A57741D65CA2D00216C45 /* AssetsLibrary.framework */,
 				4C0A574E1D6589A800216C45 /* OpenCVRecognizer */,
 				4C0A57631D6589A800216C45 /* OpenCVRecognizerTests */,
@@ -202,7 +206,9 @@
 				TargetAttributes = {
 					4C0A574B1D6589A800216C45 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = MKJ3EVS82G;
 						LastSwiftMigration = 0800;
+						ProvisioningStyle = Automatic;
 					};
 					4C0A575F1D6589A800216C45 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -398,14 +404,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MKJ3EVS82G;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = OpenCVRecognizer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = gavrilaf.github.com.OpenCVRecognizer;
+				PRODUCT_BUNDLE_IDENTIFIER = andreysak.github.com.OpenCVRecognizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "OpenCVRecognizer/Wrapper/OpenCVRecognizer-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -417,14 +427,18 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MKJ3EVS82G;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = OpenCVRecognizer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = gavrilaf.github.com.OpenCVRecognizer;
+				PRODUCT_BUNDLE_IDENTIFIER = andreysak.github.com.OpenCVRecognizer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "OpenCVRecognizer/Wrapper/OpenCVRecognizer-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
